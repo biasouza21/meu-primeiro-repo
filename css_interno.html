@@ -1,72 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ptbr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interno</title>
+    <title>CSS interno</title>
     <style>
+        body {
+            margin: 0;
+        }
+
         .card {
             width: 500px;
             height: fit-content;
             border: 3px solid black;
             border-radius: 25px;
-            background-color: rgb(251, 255, 196);
+            background-color: aliceblue;
             margin: 10px;
         }
 
         .card-imagem {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .card-imagem img {
             width: 70%;
             height: 70%;
         }
 
-        .card-imagem img {
-            width: 100px;
-            border-radius: 50%;
-
-        }
-
-
         .card-titulo {
             font-size: 35px;
-
         }
 
-        .card-titulo-nome {
-            color: rgb(249, 193, 6);
-
+        .card-titulo .card-titulo-nome {
+            color: cadetblue;
         }
 
-        .card-mensagem {
+        .card-mensagem span {
             font-style: italic;
             font-weight: bold;
-            color: rgb(249, 193, 6);
-
+            color: #b11a1a;
         }
-
-
     </style>
 </head>
 
-<body style="margin: 0;">
+<body>
+
     <div class="card">
-
-
         <div class="card-imagem">
-            <img src="https://cdn-icons-png.flaticon.com/512/5579/5579945.png" />
-
+            <img src="https://cdn-icons-png.flaticon.com/512/706/706830.png" />
         </div>
-
         <div>
-            <h1 class="card-titulo"> <span> Meu nome é: <span class="card-titulo-nome"> Gatinho preto</span> </span>
-            </h1>
-            <p class="card-mensagem"> <span> Mensagem: <span> A vida não é um morango! E ta tudo bem! </span> </span> </p>
-
+            <h1 class="card-titulo">Meu nome é:<span class="card-titulo-nome"> Adriana</span></h1>
+            <p class="card-mensagem">
+                Mensagem:<span>a vida não é um morango! E ta tudo bem!</span>
+            </p>
         </div>
-
-
     </div>
 
+    <div class="card">
+        <div class="card-imagem">
+            <img src="https://cdn-icons-png.flaticon.com/512/706/706830.png" style="width: 70%; height: 70%;"/>
+        </div>
+        <div>
+            <h1 class="card-titulo">Meu nome é:<span class="card-titulo-nome"> Fábio</span></h1>
+            <p class="card-mensagem">
+                Mensagem:<span>Ser ou não ser, eis a questão</span>
+            </p>
+        </div>
+    </div>
 
 </body>
 
